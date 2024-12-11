@@ -1,6 +1,8 @@
 streamlit
-matplotlib
+category_encoders
 pandas
 scikit-learn
+matplotlib
 seaborn
+plotly
 
