@@ -36,7 +36,7 @@ def preprocess_data(data):
 
     transformer = ColumnTransformer(
         transformers=[
-            ('ohe', OneHotEncoder(sparse=False, drop='first'), ['Occupation']),
+            ('ohe', OneHotEncoder(sparse_output=False, drop='first'), ['Occupation']),
             ('be', BinaryEncoder(), ['Credit_Product'])
         ], remainder='passthrough'
     )
