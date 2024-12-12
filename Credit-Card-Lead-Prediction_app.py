@@ -32,7 +32,7 @@ def preprocess_data(data):
     data['Gender'] = le.fit_transform(data['Gender'])
     data['Is_Active'] = le.fit_transform(data['Is_Active'])
     x = data.drop('Is_Lead', axis=1)
-    y = le.fit_transform(data['Is_Lead'])
+    y = data['Is_Lead']
 
     transformer = ColumnTransformer(
         transformers=[
