@@ -14,8 +14,8 @@ from category_encoders import BinaryEncoder
 
 # Load dataset
 def load_data():
-    data = pd.read_csv('Credit Card Data _Updated.csv')
-    data.drop(columns=['ID', 'Region_Code', 'Channel_Code'], inplace=True)
+    data = pd.read_csv('Credit Card Data.csv')
+    data.drop(columns=['ID'], inplace=True)
     data['Vintage'].fillna(data['Vintage'].median(), inplace=True)
     data['Credit_Product'].fillna('Unknown', inplace=True)
     return data
