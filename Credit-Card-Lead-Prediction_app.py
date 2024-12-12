@@ -120,7 +120,7 @@ elif page == "Model Prediction":
     with st.form("prediction_form"):
         st.subheader("Input Features")
         age = st.number_input("Age", min_value=18, max_value=100, value=35)
-        avg_balance = st.number_input("Average Account Balance", min_value=0.0, value=50000.0)
+        avg_balance = st.number_input("Average Account Balance", min_value=0.0, value=50000)
         gender = st.selectbox("Gender", ["Male", "Female"])
         occupation = st.selectbox("Occupation", ["Salaried", "Self_Employed", "Other"])
         credit_product = st.selectbox("Credit Product", ["Yes", "No", "Unknown"])
